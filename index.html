@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz with Leaderboard</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#leaderboard">Leaderboard</a>
+    </div>
+
+
+    <div class="quiz-container">
+        <h1>GEE KAY</h1>
+        <div class="question">
+            <p>Question 1: What is the capital of France?</p>
+            <input type="radio" name="q1" value="Paris" data-correct="true"> Paris
+            <input type="radio" name="q1" value="London"> London
+            <input type="radio" name="q1" value="Berlin"> Berlin
+        </div>
+        <div class="question">
+            <p>Question 2: What is 2 + 2?</p>
+            <input type="radio" name="q2" value="3"> 3
+            <input type="radio" name="q2" value="4" data-correct="true"> 4
+            <input type="radio" name="q2" value="5"> 5
+        </div>
+        <button id="next">Next</button>
+        <div class="result-container"></div>
+    </div>
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list">
+            <!-- Leaderboard list will be dynamically populated here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

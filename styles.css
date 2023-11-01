@@ -1,0 +1,119 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Styles */
+body {
+    background-image: url('background.jpg');
+    /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #3498db;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    /* Fix the navbar at the top */
+    top: 0;
+    width: 100%;
+    /* Make it full-width */
+    z-index: 1;
+    /* Ensure it's above other content */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    /* Background color for the content area */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Quiz Section Styles */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.question {
+    display: none;
+    margin: 20px 0;
+}
+
+button#next {
+    display: none;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button#next:hover {
+    background: #2980b9;
+}
+
+/* Result Container Styles */
+.result-container {
+    background: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Leaderboard Styles */
+.leaderboard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background: #f5f5f5;
+    padding: 10px;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    /* Add margin to push it below the fixed navbar */
+    z-index: 1;
+    /* Ensure it's above other content */
+}
+
+.leaderboard h2 {
+    text-align: center;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard-list li {
+    margin-bottom: 5px;
+}
